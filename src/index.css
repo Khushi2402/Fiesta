@@ -19,7 +19,7 @@
   }
 
   li {
-    @apply p-4
+    @apply p-4 cursor-pointer
   }
 
   h1 {
@@ -34,7 +34,9 @@
     @apply text-xl font-bold
   }
   button {
-    @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md
+    @apply p-3 border bg-black
+     text-white rounded-md 
+     hover:bg-transparent hover:text-black hover:border-black
   }
   .icon {
     @apply text-2xl cursor-pointer

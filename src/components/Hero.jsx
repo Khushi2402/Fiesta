@@ -22,6 +22,24 @@ const Hero = () => {
         },
     ];
 
+    const text = [
+      {
+        text: 'Event 1'
+      }, 
+      {
+        text: 'Event 2'
+      }, 
+      {
+        text: 'Event 3'
+      }, 
+      {
+        text: 'Event 4'
+      }, 
+      {
+        text: 'Event 5'
+      }
+    ]
+
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {
@@ -41,8 +59,10 @@ const Hero = () => {
     };
 
   return (
-    <div className='max-w-[1400px] h-[500px] w-full m-auto py-1 px-4 relative group'>
-      <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-300'></div>
+    <div name='home' className='max-w-[1400px] h-[500px] w-full m-auto py-1 px-4 relative group pt-20'>
+      <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-300'>
+        <h1 className='text-white' style={{text: `url(${text[currentIndex].url})`}}></h1>
+      </div>
     
       {/* Left Arrow*/}
       <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer'>
