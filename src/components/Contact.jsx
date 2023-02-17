@@ -17,9 +17,15 @@ const Contact = () => {
         <div>
             <h1 className='text-xl font-normal pb-2'>SOCIALS</h1>
             <div className=' flex justify-center'>
+              <a href='https://www.instagram.com/'>
                 <BsInstagram className='px-2 w-10 h-10 cursor-pointer'/>
+              </a>
+              <a href='https://twitter.com/'>
                 <BsTwitter className='px-2 w-10 h-10 cursor-pointer'/>
+              </a>
+              <a href='https://web.whatsapp.com/'>
                 <BsWhatsapp className='px-2 w-10 h-10 cursor-pointer'/>
+              </a>
             </div>
         </div>
         
